@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Platos de Comida</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <h2>Compra de Platos de Comida</h2>
+    <form id="compraForm">
+        <!-- Bandeja Paisa -->
+        <label for="cantidad_bandejapaisa">Cantidad Bandeja Paisa (precio: $10.000):</label>
+        <input type="number" id="cantidad_bandejapaisa" name="cantidad_bandejapaisa" min="0" value="0" onchange="calcularTotal()">
+        <!-- Arroz con Pollo -->
+        <label for="cantidad_arrozconpollo">Cantidad Arroz con Pollo (precio: $8.000):</label>
+        <input type="number" id="cantidad_arrozconpollo" name="cantidad_arrozconpollo" min="0" value="0" onchange="calcularTotal()">
+        <!-- Total -->
+        <div id="total">
+            <strong>Total a pagar:</strong> $<span id="totalPagar">0</span>
+        </div>
+        <div class="button-container">
+            <li><a href="Q.html">COMPRAR</a></li>
+            <li><a href="Q.html">VOLVER</a></li>
+
+
+        </div>
+    </form>
+
+    <script src="compra.js"></script> 
+</body>
+</html>
+
